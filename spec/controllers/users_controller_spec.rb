@@ -90,6 +90,12 @@ describe "POST 'create'" do
     post :create, :user => @attr
     flash[:success].should =~ /welcome to Vera Maurina Press Micro-Text Exchange/i 
    end
+
+   it "should sign the user in" do
+    post :create, :user => @attr
+    controller.should be_signed_in
+   end
+
   end
  end
 end
