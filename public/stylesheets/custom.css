@@ -247,3 +247,13 @@ form.new_micropost textarea {
   height: 4em;
   margin-bottom: 0;
 }
+
+ul.users 
+{
+ margin-top: 1em;
+}
+
+.users li
+{
+ list-style: none;
+}
